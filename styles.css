@@ -1,0 +1,126 @@
+/* Untuk font Bristol */
+@font-face {
+  font-family: "Bristol";
+  src: url("/fonts/Bristol.otf") format("opentype");
+}
+
+/* Untuk font Gloock-Regular */
+@font-face {
+  font-family: "Gloock-Regular";
+  src: url("/fonts/Gloock-Regular.ttf") format("truetype");
+}
+
+/* Untuk font Creato-Bold dari folder CREATO DISPLAY */
+@font-face {
+  font-family: "Creato-Bold";
+  src: url("/fonts/CREATO-DISPLAY/CreatoDisplay-Bold.otf") format("opentype");
+}
+
+/* Untuk font Creato-Regular dari folder CREATO DISPLAY */
+@font-face {
+  font-family: "Creato-Regular";
+  src: url("/fonts/CREATO-DISPLAY/CreatoDisplay-Regular.otf") format("opentype");
+}
+
+/* how to use font */
+body {
+  /* font-family: "Bristol", serif; */
+  color: #ffffff;
+}
+
+h1 {
+  font-family: "Gloock-Regular", serif;
+}
+
+p {
+  font-family: "Gloock-Regular", serif;
+}
+
+body {
+  background-color: blueviolet;
+}
+
+header {
+  height: 100vh;
+}
+
+.header-top {
+  display: flex;
+  justify-content: end;
+  padding: 35px 200px;
+}
+
+.header-round-logo {
+  width: 78px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 200px;
+  margin-top: 400px;
+}
+
+.logo-text {
+  width: 209px;
+  height: 111px;
+}
+
+.nav-container {
+}
+
+.nav-list-container {
+  margin-top: 80px;
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.home {
+  text-align: center;
+}
+
+.home-title {
+  font-size: 54px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 35px;
+}
+
+.home-subtitle {
+  text-align: left;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.home-form {
+  border: 1px solid white;
+  padding: 5px 160px 5px 10px;
+}
+
+.home-submit-btn {
+  padding: 10px 20px;
+  color: none;
+}
+
+.home-banner {
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 200px 150px;
+  width: 400px;
+  margin: 15px auto 0 auto;
+}
