@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="styles.css" />
+<header>
+  <div class="header-top">
+    <a href="/index.html">
+      <img
+        class="header-round-logo"
+        src="/assets/Logo Round 4k white.png"
+        alt=""
+      />
+    </a>
+  </div>
+  <div class="header-bottom">
+    <a href="/index.html"
+      ><img src="/assets/FJI NEW LOGO WHITE.png" alt="" class="logo-text"
+    /></a>
+    <nav class="nav-container">
+      <ul class="nav-list-container">
+        <li class="nav-about"><a href="/about.html">about</a></li>
+        <li class="nav-about"><a href="/faq.html">faq</a></li>
+        <li class="nav-instagram"><a href="#instagram">instagram</a></li>
+        <li class="nav-contact"><a href="/contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="contact">
+    <div class="contact-container">
+      <form action="submit.php" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <div class="below-form-content">
+          <div class="captcha-box">
+            <input type="checkbox" id="captcha" name="captcha" />
+            <label for="captcha">I am not robot!</label>
+          </div>
+
+          <button type="submit" class="submit-btn">submit</button>
+        </div>
+      </form>
+
+      <div class="contact-info">
+        <p><img src="mail-icon.png" alt="email" /> info@folksjourney.com</p>
+        <p>
+          <img src="whatsapp-icon.png" alt="whatsapp" /> +62 8 7777 4 888 92
+        </p>
+        <p>
+          <img src="location-icon.png" alt="location" />Jl. Raya Payangan, Br.
+          Bayad, Kecamatan Payangan, Gianyar, Bali INA
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
