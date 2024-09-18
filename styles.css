@@ -37,11 +37,12 @@ p {
 } */
 
 body {
-  background-color: blueviolet;
+  background: linear-gradient(to right, #6a00b9, #cc008d);
   padding: 35px 200px;
 }
 
 header {
+  padding-top: 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
