@@ -38,7 +38,7 @@ p {
 
 body {
   background: linear-gradient(to right, #6a00b9, #cc008d);
-  padding: 35px 200px;
+  padding: 5px 50px;
 }
 
 header {
@@ -62,7 +62,7 @@ header {
   display: flex;
   justify-content: space-between;
   /* padding: 35px 200px; */
-  margin-top: 400px;
+  margin-top: 550px;
 }
 
 .logo-text {
@@ -125,12 +125,17 @@ a {
 .home-banner {
   border: 3px solid white;
   border-radius: 5px;
-  padding: 200px 150px;
-  width: 400px;
+  padding: 120px 150px;
+  width: 230px;
   margin: 15px auto 0 auto;
 }
 
+.subtitle-sub {
+  font-weight: bold;
+}
+
 .about {
+  margin-top: 100px;  
 }
 
 .about-text {
