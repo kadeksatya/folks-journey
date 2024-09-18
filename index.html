@@ -19,7 +19,7 @@
         <img src="/assets/FJI NEW LOGO WHITE.png" alt="" class="logo-text" />
         <nav class="nav-container">
           <ul class="nav-list-container">
-            <li class="nav-about"><a href="#">about</a></li>
+            <li class="nav-about"><a href="#about">about</a></li>
             <li class="nav-about"><a href="#faq">faq</a></li>
             <li class="nav-instagram"><a href="#instagram">instagram</a></li>
             <li class="nav-contact"><a href="#contact">contact</a></li>
@@ -71,16 +71,172 @@
         </p>
         <nav class="about-list-container">
           <ul class="about-list">
-            <li class="list-bali">bali</li>
-            <li class="list-mountain">mountain</li>
-            <li class="list-car">car</li>
-            <li class="list-bed">bed</li>
-            <li class="list-temple">temple</li>
+            <li class="list-box">
+              <img src="" alt="" class="icon-bali" />
+              <p>Honeymoon & Family Packages</p>
+            </li>
+            <li class="list-box">
+              <img src="" alt="" class="icon-mountain" />
+              <p>Outdoor & Sport Packages</p>
+            </li>
+            <li class="list-box">
+              <img src="" alt="" class="icon-car" />
+              <p>Transportation & Accomodation Support</p>
+            </li>
+            <li class="list-box">
+              <img src="" alt="" class="icon-bed" />
+              <p>Bed & Breakfast Only</p>
+            </li>
+            <li class="list-box">
+              <img src="" alt="" class="icon-temple" />
+              <p>Amusements & Attractions</p>
+            </li>
           </ul>
         </nav>
       </section>
-      <section class="faq">faq</section>
-      <section class="contact">contact</section>
+      <section class="faq">
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">How can we book a journey?</button>
+            <div class="faq-answer">
+              <p>
+                You can book a journey through our website or by contacting our
+                customer support.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              What is included in the tour package?
+            </button>
+            <div class="faq-answer">
+              <p>
+                The tour package includes accommodation, daily meals,
+                transportation, and entrance fees to attractions.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">How much does the tour cost?</button>
+            <div class="faq-answer">
+              <p>
+                The tour cost varies depending on the package you select. Please
+                check the pricing details on the tour page.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Are there any discounts available?
+            </button>
+            <div class="faq-answer">
+              <p>
+                The tour cost varies depending on the package you select. Please
+                check the pricing details on the tour page.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">What is the itinerary like?</button>
+            <div class="faq-answer">
+              <p>
+                The tour cost varies depending on the package you select. Please
+                check the pricing details on the tour page.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What is the cancellation policy?
+            </button>
+            <div class="faq-answer">
+              <p>
+                The tour cost varies depending on the package you select. Please
+                check the pricing details on the tour page.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Do I need travel insurance?</button>
+            <div class="faq-answer">
+              <p>
+                The tour cost varies depending on the package you select. Please
+                check the pricing details on the tour page.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What are the visa requirements for the destination?
+            </button>
+            <div class="faq-answer">
+              <p>
+                The tour cost varies depending on the package you select. Please
+                check the pricing details on the tour page.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What should I pack for the trip?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Packing requirements depend on the destination and activities
+                planned. Generally, we recommend packing
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact-container">
+          <form action="submit.php" method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="text" id="phone" name="phone" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+
+            <div class="below-form-content">
+              <div class="captcha-box">
+                <input type="checkbox" id="captcha" name="captcha" />
+                <label for="captcha">I am not robot!</label>
+              </div>
+
+              <button type="submit" class="submit-btn">submit</button>
+            </div>
+          </form>
+
+          <div class="contact-info">
+            <p><img src="mail-icon.png" alt="email" /> info@folksjourney.com</p>
+            <p>
+              <img src="whatsapp-icon.png" alt="whatsapp" /> +62 8 7777 4 888 92
+            </p>
+            <p>
+              <img src="location-icon.png" alt="location" />Jl. Raya Payangan,
+              Br. Bayad, Kecamatan Payangan, Gianyar, Bali INA
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
