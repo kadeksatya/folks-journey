@@ -13,6 +13,7 @@
 /* Untuk font Creato-Bold dari folder CREATO DISPLAY */
 @font-face {
   font-family: "Creato-Bold";
+  font-weight: 600;
   src: url("/fonts/CREATO-DISPLAY/CreatoDisplay-Bold.otf") format("opentype");
 }
 
@@ -26,6 +27,9 @@
 body {
   /* font-family: "Bristol", serif; */
   color: #ffffff;
+  display: block;
+  background: linear-gradient(to right, #6a00b9, #cc008d);
+  padding: 5px 50px;
 }
 
 /* h1 {
@@ -36,20 +40,16 @@ p {
   font-family: "Gloock-Regular", serif;
 } */
 
-body {
-  background: linear-gradient(to right, #6a00b9, #cc008d);
-  padding: 5px 50px;
-}
 
 header {
   padding: 30px 70px;
   position: sticky;
+  height: 90vh;
   top: 0;
   z-index: 1000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
 }
 
 .header-top {
@@ -64,7 +64,7 @@ header {
 .header-bottom {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .logo-text {
@@ -80,17 +80,21 @@ header {
   gap: 15px;
   list-style-type: none;
   margin-top: 85px;
+  font-family: "Creato-Regular";
+  font-weight: bold;
 }
 
 a {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
+  font-family: "Creato-Regular";
+  /* font-weight: bold; */
 }
 
 .home {
   text-align: center;
-  margin-top: -100vh;
+  margin-top: -75vh;
 }
 
 .home-title {
@@ -137,13 +141,10 @@ a {
 }
 
 .about {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -100vh;
 }
-
 
 .about-text {
   font-family: sans-serif;
