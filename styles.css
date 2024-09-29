@@ -29,7 +29,9 @@ body {
   color: #ffffff;
   display: block;
   background: linear-gradient(to right, #6a00b9, #cc008d);
+  background-repeat: no-repeat;
   padding: 5px 50px;
+  height: 96.3vh;
 }
 
 /* h1 {
@@ -137,8 +139,6 @@ a {
     /* font-weight: bold; */
   }
 }
-
-
 
 .about {
   display: flex;
