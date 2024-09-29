@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    container_name: nginx-proxy
+    ports:
+      - "80:80"
+      # - "443:443"
+    environment:
+      TRUST_DOWNSTREAM_PROXY: true
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      # - ./nginx/certs:/etc/nginx/certs
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      # - ./nginx/conf:/etc/nginx/include
+      - ./:/var/lib/www
+      # - $HOME/mastra/projects/web-template/AdminLTE:/var/lib/www/AdminLTE
+    networks:
+      - main-proxy
+
+networks:
+  main-proxy:
+    name: main-proxy
+    driver: bridge

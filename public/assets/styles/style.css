@@ -1,0 +1,332 @@
+/* Untuk font Bristol */
+@font-face {
+  font-family: "Bristol";
+  src: url("/fonts/Bristol.otf") format("opentype");
+}
+
+/* Untuk font Gloock-Regular */
+@font-face {
+  font-family: "Gloock-Regular";
+  src: url("/fonts/Gloock-Regular.ttf") format("truetype");
+}
+
+/* Untuk font Creato-Bold dari folder CREATO DISPLAY */
+@font-face {
+  font-family: "Creato-Bold";
+  font-weight: 600;
+  src: url("/fonts/CREATO-DISPLAY/CreatoDisplay-Bold.otf") format("opentype");
+}
+
+/* Untuk font Creato-Regular dari folder CREATO DISPLAY */
+@font-face {
+  font-family: "Creato-Regular";
+  src: url("/fonts/CREATO-DISPLAY/CreatoDisplay-Regular.otf") format("opentype");
+}
+
+/* how to use font */
+body {
+  /* font-family: "Bristol", serif; */
+  color: #ffffff;
+  display: block;
+  background: linear-gradient(to right, #6a00b9, #cc008d);
+  padding: 5px 50px;
+}
+
+/* h1 {
+  font-family: "Gloock-Regular", serif;
+}
+
+p {
+  font-family: "Gloock-Regular", serif;
+} */
+
+header {
+  padding: 30px 70px;
+  position: sticky;
+  height: 90vh;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-top {
+  display: flex;
+  justify-content: end;
+}
+
+.header-round-logo {
+  width: 78px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.logo-text {
+  width: 209px;
+  height: 111px;
+}
+
+.nav-list-container {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+  margin-top: 85px;
+  font-family: "Creato-Regular";
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Creato-Regular";
+  /* font-weight: bold; */
+}
+
+@media (max-width: 425px) {
+  header {
+    padding: 30px 70px;
+    position: sticky;
+    height: 90vh;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-round-logo {
+    width: 78px;
+  }
+
+  .header-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  .logo-text {
+    width: 209px;
+    height: 111px;
+  }
+
+  .nav-list-container {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    margin-top: 85px;
+    font-family: "Creato-Regular";
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Creato-Regular";
+    /* font-weight: bold; */
+  }
+}
+
+
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -75vh;
+}
+
+.about-text {
+  font-family: sans-serif;
+  font-size: 19px;
+  text-align: justify;
+}
+
+.about-title-bold {
+  font-weight: bold;
+}
+
+.about-list-container {
+  text-align: center;
+}
+
+.about-list {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.list-box {
+  font-size: 6px;
+  font-family: sans-serif;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  border: 2px solid white;
+}
+
+.faq {
+  padding: 50px;
+  margin-top: -100vh;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+}
+
+.faq-item {
+  background-color: #7a1db4;
+  border: 1px solid white;
+  margin: 10px 0;
+}
+
+.faq-question {
+  width: 100%;
+  background-color: #7a1db4;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #5e1091;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  background-color: #5e1091;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-answer p {
+  margin: 15px 0;
+}
+
+.contact {
+  padding: 90px 100px 150px 100px;
+  margin-top: -100vh;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 30px;
+  text-align: left;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: white;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  border-radius: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ff6f00;
+}
+
+.below-form-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.captcha-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.captcha-box input {
+  margin-right: 10px;
+}
+
+.submit-btn {
+  width: 100px;
+  height: 28px;
+  border: 5px solid white;
+  border-radius: 35px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #ff6f00;
+  border-color: #ff6f00;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  font-size: 12px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-info p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info img {
+  width: 16px;
+  height: 16px;
+}
