@@ -12,6 +12,10 @@ class BaseModel extends Model
 
     protected $guarded = [];
 
+    protected $casts = [
+        'id' => 'string'
+    ];
+
     protected static function boot()
     {
         parent::boot();
