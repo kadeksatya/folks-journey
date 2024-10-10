@@ -1,64 +1,10 @@
-.home {
-    text-align: center;
-    margin-top: -68vh;
-  }
-  
-  .home-title {
-    font-size: 54px;
-  }
-  
-  .form-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 35px;
-  }
-  
-  .home-subtitle {
-    text-align: left;
-    font-family: "Creato-Regular";
-  }
-  
-  .subtitle-sub {
-    font-family: "Creato-Regular";
-    font-style: italic;
-    font-weight: lighter;
-  }
-  
-  .form-wrapper {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    font-family: "Creato-Regular";
-  }
-  
-  .home-form {
-    font-family: "Creato-Regular";
-    margin-top: 12px;
-    height: 25px;
-    border: 1px solid white;
-    padding: 10px 160px 5px 10px;
-  }
-  
-  .home-submit-btn {
-    font-family: "Creato-Regular";
-    font-style: italic;
-    border: 3px solid #ffffff;
-    height: 43px;
-    padding: 0px 15px;
-    color: #7a1db4;
-    margin-top: 12px;
-    color: none;
-  }
-  
-  .home-banner {
-    border: 3px solid white;
-    border-radius: 5px;
-    padding: 120px 150px;
-    width: 230px;
-    margin: 15px auto 0 auto;
-  }
-  
-  .subtitle-sub {
-    font-weight: bold;
-  }
+body{
+    color: #fff;
+}
+.text-4xl {
+    font-size: 60px !important;
+}
+.rounded-custom
+{
+    border-radius: 10px;
+}

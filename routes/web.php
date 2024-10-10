@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Frontend\GeneralController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,21 +20,12 @@ require_once('admin.php');
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view("home");
+Route::controller(GeneralController::class)->name('frontend.')->group(function(){
+    route::get('/', 'index')->name('index');
+    route::get('/faq', 'pagefaq')->name('faq');
+    route::get('/contact', 'pagecontact')->name('contact');
 });
 
-Route::get('/home', function () {
-    return view("home");
-});
-
-Route::get('/faq', function () {
-    return view("faq");
-});
-
-Route::get('/contact', function () {
-    return view("contact");
-});
 
 Route::get('/about', function () {
     return view(
