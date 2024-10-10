@@ -1,6 +1,5 @@
-@extends("layouts.main")
+@extends("frontend.layouts.main")
 
-@section("title", "About")
 
 
 @section('stylesheet')
@@ -8,7 +7,7 @@
 @endsection
 
 @section("container")
-<section class="about">
+<section class="text-white">
     <p class="about-text">
       Hello ! <br />
       <br />

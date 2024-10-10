@@ -36,4 +36,10 @@ class GeneralController extends Controller
             'page_title' => 'Contact'
         ]);
     }
+    function pageabout()
+    {
+        return view('frontend.pages.about', [
+            'page_title' => 'About'
+        ]);
+    }
 }

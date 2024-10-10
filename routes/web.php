@@ -24,18 +24,19 @@ Route::controller(GeneralController::class)->name('frontend.')->group(function()
     route::get('/', 'index')->name('index');
     route::get('/faq', 'pagefaq')->name('faq');
     route::get('/contact', 'pagecontact')->name('contact');
+    route::get('/about', 'pageabout')->name('about');
 });
 
 
-Route::get('/about', function () {
-    return view(
-        "about",
-        [
-            "nama" => "Benony Gabriel",
-            "prodi" => "Ilmu Komputer"
-        ]
-    );
-});
+// Route::get('/about', function () {
+//     return view(
+//         "about",
+//         [
+//             "nama" => "Benony Gabriel",
+//             "prodi" => "Ilmu Komputer"
+//         ]
+//     );
+// });
 
 Route::get('/blog', function () {
     $blog_posts = [

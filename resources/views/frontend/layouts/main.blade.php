@@ -27,19 +27,20 @@
 
         @yield("container")
     </main>
-    <footer class="my-5 item-center z-0">
-        <div class="header-bottom">
-            <a href="/home"><img src="/assets/FJI NEW LOGO WHITE.png" alt="" class="logo-text" /></a>
-            <nav class="nav-container">
-                <ul class="nav-list-container">
-                    <li class="nav-about"><a href="/about">about</a></li>
-                    <li class="nav-about"><a href="/faq">faq</a></li>
-                    <li class="nav-instagram"><a target="_blank"
-                            href="https://www.instagram.com/folksjourney.id">instagram</a></li>
-                    <li class="nav-contact"><a href="/contact">contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <footer class="footer mt-auto py-3 text-white">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="/home"><img src="/assets/FJI NEW LOGO WHITE.png" alt="Logo" class="logo-text" /></a>
+                <nav>
+                    <ul class="list-unstyled d-flex gap-5 mb-0">
+                        <li><a href="/about" class="text-white px-2">About</a></li>
+                        <li><a href="/faq" class="text-white px-2">FAQ</a></li>
+                        <li><a href="https://www.instagram.com/folksjourney.id" target="_blank"
+                                class="text-white px-2">Instagram</a></li>
+                        <li><a href="/contact" class="text-white px-2">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>

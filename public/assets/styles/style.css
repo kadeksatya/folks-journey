@@ -24,12 +24,21 @@
 }
 
 /* how to use font */
-body {
+html, body {
   /* font-family: "Bristol", serif; */
   color: #ffffff;
   display: block;
   background: linear-gradient(to right, #6a00b9, #cc008d);
   padding: 5px 50px;
+  height: 100%;
+    display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 /* h1 {
