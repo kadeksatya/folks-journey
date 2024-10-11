@@ -29,7 +29,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('admin.dashboard.index')}}" class="nav-link">
+                    <a href="{{route('admin.contact.index')}}" class="nav-link">
                         <i class="nav-icon fas fa-comment"></i>
                         <p>
                             Contact
@@ -68,7 +68,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/calendar.html" class="nav-link">
+                    <a href="{{route('admin.setting.index')}}" class="nav-link">
                         <i class="nav-icon fa fa-cogs"></i>
                         <p>
                             Setting Page

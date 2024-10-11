@@ -25,6 +25,11 @@ Route::controller(GeneralController::class)->name('frontend.')->group(function()
     route::get('/faq', 'pagefaq')->name('faq');
     route::get('/contact', 'pagecontact')->name('contact');
     route::get('/about', 'pageabout')->name('about');
+    route::post('/contact/store', 'sendEmail')->name('contact.store');
+});
+
+route::get('/email-example', function(){
+    return view('frontend.components.email_tamplate');
 });
 
 

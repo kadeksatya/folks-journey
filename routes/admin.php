@@ -1,9 +1,11 @@
 <?php
 
 use App\Http\Controllers\Admin\BannerController;
+use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\FAQController;
 use App\Http\Controllers\Admin\LoginController;
+use App\Http\Controllers\Admin\SettingController;
 use Illuminate\Support\Facades\Route;
 
 if(env('APP_ADMIN_URL')){
@@ -27,6 +29,18 @@ if(env('APP_ADMIN_URL')){
                 route::get('/{id}/edit', 'edit')->name('edit');
                 route::put('/{id}/update', 'update')->name('update');
                 route::delete('/{id}/destroy', 'destroy')->name('destroy');
+            });
+
+            // Setting
+            Route::controller(SettingController::class)->name('setting.')->prefix('setting')->group(function () {
+                route::get('/', 'index')->name('index');
+                route::post('/store', 'store')->name('store');
+            });
+
+            // Contact
+            Route::controller(ContactController::class)->name('contact.')->prefix('contact')->group(function () {
+                route::get('/', 'index')->name('index');
+                route::get('/getdata', 'getdata')->name('getdata');
             });
 
             Route::prefix('master-data')->name('masterdata.')->group(function(){
