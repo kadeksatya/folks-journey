@@ -34,7 +34,7 @@
             <!-- Logo Section -->
             <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
                 <a href="{{url('/')}}">
-                    <img src="{{asset('assets/FJI NEW LOGO WHITE.png')}}" alt="Logo" class="logo-text img-fluid" />
+                    <img src="{{asset('assets/FJI NEW LOGO WHITE.png')}}" alt="Folks Jorney Logo" class="logo-text img-fluid" />
                 </a>
             </div>
             <!-- Menu Section -->
